@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-16T15:53:30.941Z",
+        "reason": "User brief explicitly requires the exact hero eyebrow FRESH GRADUATE · INDUSTRIAL ENGINEERING; scoped to this portfolio page."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-16T15:53:30.977Z",
+        "reason": "Reviewed every current match: profile facts have 17px vertical padding, tool rows 14px, language rows 10px, experience rows 37px, and section backgrounds have 92–112px vertical padding; the detector misses padding on nested wrappers."
+      }
+    ]
+  }
+}
