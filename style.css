@@ -58,11 +58,10 @@ h1, h2, h3, p { margin-top: 0; }
 .text-link { padding-block: 8px; border-bottom: 1px solid var(--wine-soft); color: var(--wine); font-size: 12px; font-weight: 600; }
 .text-link span { padding-left: 10px; }
 .hero-art { position: relative; width: 100%; max-width: 430px; aspect-ratio: .86; justify-self: end; padding: 25px; overflow: hidden; background: var(--wine); color: #fffaf7; animation: rise-in .8s .12s var(--ease) both; }
-.hero-art::before { position: absolute; right: -76px; bottom: -105px; width: 280px; height: 280px; border: 1px solid rgba(255,255,255,.21); border-radius: 50%; content: ''; }
-.hero-art::after { position: absolute; right: -20px; bottom: -145px; width: 280px; height: 280px; border: 1px solid rgba(255,255,255,.13); border-radius: 50%; content: ''; }
+.profile-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 12%; }
+.hero-art::before { position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, rgba(35,12,20,.42), transparent 28%, transparent 65%, rgba(35,12,20,.72)); content: ''; }
+.hero-art::after { position: absolute; z-index: 1; right: -76px; bottom: -105px; width: 280px; height: 280px; border: 1px solid rgba(255,255,255,.28); border-radius: 50%; content: ''; }
 .hero-art-top, .hero-art-bottom { position: relative; z-index: 1; display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; letter-spacing: .1em; line-height: 1.55; }
-.monogram { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-54%); font-family: var(--serif); font-size: clamp(125px, 19vw, 220px); font-weight: 500; letter-spacing: -.13em; line-height: .8; white-space: nowrap; }
-.monogram span { color: #d5aeb9; font-family: var(--sans); font-weight: 300; font-size: .7em; }
 .hero-art-rule { position: absolute; z-index: 1; top: 68%; left: 25px; width: 55px; height: 1px; background: rgba(255,255,255,.72); }
 .hero-art-bottom { position: absolute; right: 25px; bottom: 25px; left: 25px; align-items: end; }
 .hero-art-bottom span:last-child { text-align: right; color: #e3cbd2; }
@@ -198,7 +197,6 @@ h2 { margin-bottom: 0; font-family: var(--serif); font-size: clamp(36px, 4vw, 52
   .hero-support { font-size: 12px; }
   .desktop-break { display: none; }
   .hero-art { width: 78%; max-width: 340px; aspect-ratio: 1.02; justify-self: center; }
-  .monogram { font-size: clamp(145px, 45vw, 200px); }
   .hero-art-rule { top: 70%; }
   .hero-index { bottom: 20px; }
   .section-heading { margin-bottom: 36px; }
